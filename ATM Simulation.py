@@ -93,7 +93,7 @@ class ATM:
 
     def authenticate(self, pin, cardObj):
 
-        time.sleep(2)
+        time.sleep(1)
         # clrscr()
 
         if pin == cardObj.get_card_pin():
@@ -200,7 +200,7 @@ Let's get started!
 ==================================================
 """)
     holder_name_input = input("Enter account holder name: ")
-    account_type_input = input("Enter account type: ")
+    account_type_input = input("Enter account type [Savings(S) or Current(C)]: ")
     initial_deposit_input = input("Enter initial deposit: ")
     pin_input = getpass("Enter a 4 digit pin: ")
 
@@ -337,9 +337,7 @@ CURRENT BALANCE   : ₹{user.get_balance()}
     [1] Deposit Funds
     [2] Withdraw Funds
     [3] Balance Inquiry
-    [4] Account Details
-    [5] Print Receipt
-    [6] Exit Secure Session
+    [4] Exit Secure Session
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -387,15 +385,12 @@ Thank you for choosing STEEL MOUNTAIN.
                     clrscr()
 
             case 3:
-                pass
+                autoAuth(atm, userCard)
+                print(f"Current balance: {user.get_balance()}")
+                time.sleep(2)
+                clrscr()
 
             case 4:
-                pass
-
-            case 5:
-                pass
-            
-            case 6:
                 stopMenu == True
                 print("Exiting...")
                 break
