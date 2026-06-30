@@ -1,6 +1,6 @@
-# FORTRESS - Impenetrable ATM Simulation
+# STEEL MOUNTAIN - Impenetrable ATM Simulation
 
-FORTRESS is a terminal-based ATM simulation built in Python using Object-Oriented Programming (OOP) principles. The project emulates the workflow of a real ATM, allowing users to create an account, generate an ATM card, authenticate securely, and perform banking operations through a clean command-line interface.
+STEEL MOUNTAIN is a terminal-based ATM simulation built in Python using Object-Oriented Programming (OOP) principles. The project emulates the workflow of a real ATM, allowing users to create an account, generate an ATM card, authenticate securely, and perform banking operations through a clean command-line interface.
 
 ## Features
 
